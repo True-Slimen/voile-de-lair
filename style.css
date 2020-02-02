@@ -1,31 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-   
-}
-
-.navbar{
+.navbar {
     width: 100%;
     position: relative;
     z-index: 1000;
     background-color: transparent;
 }
 
-.form-control{
+.form-control {
     background-color: rgba(255, 255, 255, 0.438);
 }
 
-.accueil{
-    margin: -156px 0 0 0;
+#scene {
+    position: relative;
+    margin: -56px 0 0 0;
     padding: 0;
     background-size: contain;
     height: 100%;
-}
-
-.accueil img{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#scene img {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
 }
