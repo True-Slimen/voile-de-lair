@@ -16,15 +16,26 @@
 }
 
 #scene {
+    overflow: hidden;
     position: relative;
     margin: -56px 0 0 0;
     padding: 0;
     background-size: contain;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section2{
+margin-top: 0vh;
+}
+    
+article{
+    background-color: rgb(255, 255, 255);
+    padding: 65px;
+    margin: 30px auto 0 auto;
 }
   
 #scene img {
@@ -32,5 +43,185 @@
   top: 0;
   left: 0;
   width: 100%;
-
 }
+
+ul{
+    overflow: hidden;
+}
+
+.no_gout{
+    padding: 0!important;
+}
+
+.bouton_main{
+    display: block;
+    margin: 5px auto;
+    z-index: 500;
+    border: 1px solid white;
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    letter-spacing: 3px;
+    transition: all 1.4s;
+}
+
+.bouton_main:hover{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.589);
+    width: 100vw;
+    color: rgb(66, 66, 66) ;
+}
+
+.parapente {
+    animation: 3s infinite alternate ease-in-out;
+
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      top: 0;
+      left: 0;
+    }
+  
+    to {
+        top: -15px;
+        left: -35px;
+    }
+  }
+
+  .mont1 {
+    width: 150%!important;
+    height: 150%;
+    top: 0;
+    left: 0px;
+    animation: 3s infinite alternate ease-in-out;
+
+    animation-name: mont1;
+  }
+  
+  @keyframes mont1 {
+    from {
+      top: -155px;
+      left: -900px;
+    }
+  
+    to {
+        top: -155px;
+        left: -950px;
+    }
+  }
+
+  .mont2 {
+      width: 150%!important;
+      height: 150%;
+    
+    left: 0;
+    animation: 3s infinite alternate ease-in-out;
+
+    animation-name: mont2;
+  }
+  
+  @keyframes mont2 {
+    from {
+      top: -100px;
+      left: 0px;
+    }
+  
+    to {
+        top: -100px;
+        left: -30px;
+    }
+  }
+
+  .mont3 {
+    width: 105%!important;
+    height: 105%;
+    top: 0;
+    left: 0px;
+    animation: 3s infinite alternate ease-in-out;
+
+    animation-name: mont3;
+  }
+  
+  @keyframes mont3 {
+    from {
+      top: 0;
+      left: -60px;
+    }
+  
+    to {
+        top: 0px;
+        left: -70px;
+    }
+  }
+
+  .mont4 {
+    width: 150%!important;
+    height: 150%;
+  
+  left: 0;
+  animation: 3s infinite alternate ease-in-out;
+
+  animation-name: mont4;
+}
+
+@keyframes mont4 {
+  from {
+    top: -50px;
+    left: -20px;
+  }
+
+  to {
+      top: -50px;
+      left: -25px;
+  }
+}
+
+.mont5 {
+    width: 100%!important;
+    height: 100%;
+  
+  left: 0;
+  animation: 3s infinite alternate ease-in-out;
+
+  animation-name: mont5;
+}
+
+@keyframes mont5 {
+  from {
+    top: 60px;
+    left: -38px;
+  }
+
+  to {
+      top: 60px;
+      left: -40px;
+  }
+}
+
+.ciel {
+    width: 100%!important;
+    height: 100%;
+    display: none;
+  
+  left: 0;
+  animation: 3s infinite alternate ease-in-out;
+
+  animation-name: ciel;
+}
+
+@keyframes ciel {
+  from {
+    top: 50px;
+    left: 0px;
+  }
+
+  to {
+      top: 50px;
+      left: 0px;
+  }
+}
+
