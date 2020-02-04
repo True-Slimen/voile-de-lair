@@ -11,6 +11,10 @@
     background-color: transparent;
 }
 
+.navbar li{
+  margin: 0 1vw;
+}
+
 .logo{
   height: 90px;
 }
