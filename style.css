@@ -28,13 +28,22 @@
 }
 
 h1{
+  z-index: -5000;
  text-align: center;
- margin: -30px 0 70px 0;
- font-family: 'Segoe UI';
+ margin: 90px auto 70px auto;
+ font-family: 'bebas neue';
  color: white;
- font-weight: 100;
- font-size: 55px;
- letter-spacing: 12px;
+ font-weight: 600;
+ font-size:6vd;
+ letter-spacing: 1px;
+ -webkit-transform: skew(63deg,-26.6deg);
+	-moz-transform: skew(63deg,-26.6deg);
+	-o-transform: skew(63deg,-26.6deg);
+	-ms-transform: skew(63deg,-26.6deg);
+	transform: skew(63deg,-25deg);
+	text-shadow: 0 0 3px rgba(0, 0, 128, 0.25);
+	z-index: 1000;
+
 }
 
 h1 span{
@@ -44,6 +53,24 @@ h1 span{
 h1 span:hover{
 color: rgba(255, 255, 255, 0);
 }
+
+h2{
+  text-align: center;
+  margin: -85px -80px 120px auto;
+  font-family: 'bebas neue';
+  color: white;
+  font-weight: 600;
+  font-size: 4vd;
+  letter-spacing: 1px;
+  -webkit-transform: skew(-1deg,-26.6deg);
+	-moz-transform: skew(-1deg,-26.6deg);
+	-o-transform: skew(-1deg,-26.6deg);
+	-ms-transform: skew(-1deg,-26.6deg);
+	transform: skew(-1deg,-25deg);
+
+	z-index: 1000;
+ 
+ }
 
 #scene {
     overflow: hidden;
@@ -83,10 +110,14 @@ ul{
     padding: 0!important;
 }
 
+#cadre_bouton{
+  margin: 30px auto 0 auto;
+}
 .bouton_main{
+  position: relative;
     display: block;
     margin: 5px auto;
-    z-index: 500;
+    z-index: 5000!important;
     border: 1px solid white;
     width: 300px;
     height: 50px;
@@ -95,6 +126,7 @@ ul{
     font-size: 18px;
     letter-spacing: 3px;
     transition: all 1.4s;
+    
 }
 
 .bouton_main:hover{
@@ -105,28 +137,31 @@ ul{
 }
 
 .parapente {
+  z-index: 2500;
     animation: 3s infinite alternate ease-in-out;
-
+  width: 100%;
+  height: 100%;
     animation-name: slidein;
   }
   
   @keyframes slidein {
     from {
       top: 0;
-      left: 0;
+      left: -35px;
     }
   
     to {
         top: -15px;
-        left: -35px;
+        left: 0px;
     }
   }
 
   .mont1 {
-    width: 150%!important;
-    height: 150%;
+    width: 140%!important;
+    height: 140%;
+
     top: 0;
-    left: 0px;
+    left: 0vw;
     animation: 3s infinite alternate ease-in-out;
 
     animation-name: mont1;
@@ -134,19 +169,19 @@ ul{
   
   @keyframes mont1 {
     from {
-      top: -155px;
-      left: -900px;
+      top: -15vh;
+      left: -37vw;
     }
   
     to {
-        top: -155px;
-        left: -950px;
+        top: -15vh;
+        left: -39vw;
     }
   }
 
   .mont2 {
-      width: 150%!important;
-      height: 150%;
+      width: 130%!important;
+      height: 130%;
     
     left: 0;
     animation: 3s infinite alternate ease-in-out;
@@ -156,13 +191,13 @@ ul{
   
   @keyframes mont2 {
     from {
-      top: -100px;
-      left: 0px;
+      top: -110px;
+      left: 0vw;
     }
   
     to {
-        top: -100px;
-        left: -30px;
+        top: -110px;
+        left: -1vw;
     }
   }
 
@@ -172,86 +207,42 @@ ul{
     top: 0;
     left: 0px;
     animation: 3s infinite alternate ease-in-out;
-
+    
     animation-name: mont3;
   }
   
   @keyframes mont3 {
     from {
-      top: 0;
-      left: -60px;
+      top: -15px;
+      left: -1.5vw;
     }
   
     to {
-        top: 0px;
-        left: -70px;
+        top: -15px;
+        left: -1.0vw;
     }
   }
 
-  .mont4 {
-    width: 150%!important;
-    height: 150%;
-  
-  left: 0;
-  animation: 3s infinite alternate ease-in-out;
-
-  animation-name: mont4;
-}
-
-@keyframes mont4 {
-  from {
-    top: -50px;
-    left: -20px;
-  }
-
-  to {
-      top: -50px;
-      left: -25px;
-  }
-}
 
 .mont5 {
-    width: 100%!important;
-    height: 100%;
-  
-  left: 0;
-  animation: 3s infinite alternate ease-in-out;
+  width: 100%!important;
+  height: 100%;
+top: 50px!important;
+left: 0vw!important;
 
-  animation-name: mont5;
-}
-
-@keyframes mont5 {
-  from {
-    top: 60px;
-    left: -38px;
-  }
-
-  to {
-      top: 60px;
-      left: -40px;
-  }
 }
 
 .ciel {
     width: 100%!important;
     height: 100%;
-    display: none;
-  
+ 
+  top: 50px!important;
   left: 0;
-  animation: 3s infinite alternate ease-in-out;
-
-  animation-name: ciel;
+  
 }
 
-@keyframes ciel {
-  from {
-    top: 50px;
-    left: 0px;
-  }
-
-  to {
-      top: 50px;
-      left: 0px;
+@media screen and (max-width: 640px) {
+  #scene {
+  height: 60vh;
   }
 }
-
