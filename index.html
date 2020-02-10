@@ -13,42 +13,7 @@
 </head>
 
 <body>
-    <section class="container navig">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand" href="#"><img class="logo" src="image/para/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nous rejoindre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">L'équipe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Programme</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Galerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        
-                    </ul>
-                    
-                </div>
-            </nav>
-        </div>
-    </section>
+    
 
     <section data-relative-input="true" id="scene" class="col-12">
        
@@ -102,21 +67,95 @@
         </h2>
         
         <div id="cadre_bouton">
-        <input type="button" class="ml-auto mr-auto bouton_main petit" value="S'envoler"> 
-    <input type="button" class="ml-auto mr-auto bouton_main moyen" value="Offrir le ciel">
-    <input type="button" class="ml-auto mr-auto bouton_main grand" value="Surpasser les sommets">
+        <input type="button" class="ml-auto mr-auto bouton_main petit" value="Accueil"> 
+    <input type="button" class="ml-auto mr-auto bouton_main moyen" value="Nous rejoindre">
+    <input type="button" class="ml-auto mr-auto bouton_main grand" value="L'équipe">
+    <input type="button" class="ml-auto mr-auto bouton_main petit" value="Programme"> 
+    <input type="button" class="ml-auto mr-auto bouton_main moyen" value="Galerie">
+    <input type="button" class="ml-auto mr-auto bouton_main grand" value="Nous contacter">
         </div>
 </div>
     
-    
+<svg class="arrows">
+    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+</svg>
     
 </section>
-    <section class="container section2">
-        <div class="row">
-            <article class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum blanditiis doloribus veniam ut nulla adipisci nostrum explicabo ipsum minima, libero inventore illum necessitatibus perspiciatis, voluptatem alias? Cumque itaque unde voluptas sequi pariatur veniam necessitatibus asperiores repudiandae, vero optio amet dolore beatae quia autem eaque rerum libero iusto. Tempora, voluptatibus?</article>
-            <article class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum blanditiis doloribus veniam ut nulla adipisci nostrum explicabo ipsum minima, libero inventore illum necessitatibus perspiciatis, voluptatem alias? Cumque itaque unde voluptas sequi pariatur veniam necessitatibus asperiores repudiandae, vero optio amet dolore beatae quia autem eaque rerum libero iusto. Tempora, voluptatibus?</article>
-            <article class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum blanditiis doloribus veniam ut nulla adipisci nostrum explicabo ipsum minima, libero inventore illum necessitatibus perspiciatis, voluptatem alias? Cumque itaque unde voluptas sequi pariatur veniam necessitatibus asperiores repudiandae, vero optio amet dolore beatae quia autem eaque rerum libero iusto. Tempora, voluptatibus?</article>
-        </div>
+<section class="navig" >
+    <div class="container col-12"  id="navbar_fixed">
+        <nav  class="col-6 navbar navbar-expand-lg navbar-light ml-auto mr-auto">
+            <a class="navbar-brand" href="#"><img class="logo" src="image/para/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nous rejoindre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">L'équipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+    </div>
+</section>
+    <section class=" section2">
+       <div class="row">
+            <article class=" row">
+               <div class=" ml-auto texte col-5">
+                <h3>Venez découvrir un sport unique, progressez en douceur.</h3>
+                <p class="text_gauche ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum blanditiis doloribus veniam ut nulla adipisci nostrum explicabo ipsum minima, libero inventore illum necessitatibus perspiciatis, voluptatem alias? Cumque itaque unde voluptas sequi pariatur veniam necessitatibus asperiores repudiandae, vero optio amet dolore beatae quia autem eaque rerum libero iusto. Tempora, voluptatibus?</p>
+                <input type="button" class="ml-auto mr-auto bouton_second clair" value="Nous contacter">
+               </div> 
+            <img class="" src="/image/sergey-pakhomov-8ZYkjNarn5s-unsplash.jpg" alt="duo de parapente">
+        </article>
+
+        <article class="col-12 row">
+            <img class="" src="/image/patrick-hendry-5Y7Hcztatag-unsplash.jpg" alt="duo de parapente">
+            <div class="mr-auto texte col-5">
+             <h4>Venez découvrir un sport unique, progressez en douceur.</h4>
+             <p class="text_droite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum blanditiis doloribus veniam ut nulla adipisci nostrum explicabo ipsum minima, libero inventore illum necessitatibus perspiciatis, voluptatem alias? Cumque itaque unde voluptas sequi pariatur veniam necessitatibus asperiores repudiandae, vero optio amet dolore beatae quia autem eaque rerum libero iusto. Tempora, voluptatibus?</p>
+            </div> 
+     </article>
+    </div>
+    <div class="row">
+        <article class=" row">
+           <div class=" ml-auto texte col-5">
+            <h3>Venez découvrir un sport unique, progressez en douceur.</h3>
+            <p class="text_gauche ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum blanditiis doloribus veniam ut nulla adipisci nostrum explicabo ipsum minima, libero inventore illum necessitatibus perspiciatis, voluptatem alias? Cumque itaque unde voluptas sequi pariatur veniam necessitatibus asperiores repudiandae, vero optio amet dolore beatae quia autem eaque rerum libero iusto. Tempora, voluptatibus?</p>
+            <input type="button" class="ml-auto mr-auto bouton_second clair" value="Nous contacter">
+           </div> 
+        <img class="" src="/image/sergey-pakhomov-8ZYkjNarn5s-unsplash.jpg" alt="duo de parapente">
+    </article>
+
+    <article class="col-12 row">
+        <img class="" src="/image/patrick-hendry-5Y7Hcztatag-unsplash.jpg" alt="duo de parapente">
+        <div class="mr-auto texte col-5">
+         <h4>Venez découvrir un sport unique, progressez en douceur.</h4>
+         <p class="text_droite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum blanditiis doloribus veniam ut nulla adipisci nostrum explicabo ipsum minima, libero inventore illum necessitatibus perspiciatis, voluptatem alias? Cumque itaque unde voluptas sequi pariatur veniam necessitatibus asperiores repudiandae, vero optio amet dolore beatae quia autem eaque rerum libero iusto. Tempora, voluptatibus?</p>
+        </div> 
+ </article>
+</div>
     </section>
       
       
