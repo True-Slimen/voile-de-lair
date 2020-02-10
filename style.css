@@ -13,10 +13,6 @@
   background-color: rgb(255, 255, 255);
 }
 
-.shadow{
-  box-shadow: rgb(168, 168, 168) 0px 0px 10px;
-}
-
 .navbar {
   width: 100%;
   position: relative;
@@ -29,10 +25,7 @@
   font-family: roboto condensed;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-}
+
 
 .navbar a {
   position: relative;
@@ -57,13 +50,21 @@
   background: rgba(88, 88, 88, 0.9);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
 
-.logo {
-  height: 45px;
+.shadow{
+  box-shadow: rgb(168, 168, 168) 0px 0px 10px;
 }
 
 .nav-item {
   font-size: 20px;
+}
+
+.logo {
+  height: 45px;
 }
 
 .form-control {
@@ -71,22 +72,18 @@
 }
 
 h1 {
-
   text-align: center;
-  margin: -50px auto 70px -2%;
+  margin: 200px auto 70px -2%;
   font-family: 'bebas neue';
   color: white;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 59px;
   letter-spacing: 1px;
   -webkit-transform: skew(63deg, -26.6deg);
   -moz-transform: skew(63deg, -26.6deg);
   -o-transform: skew(63deg, -26.6deg);
   -ms-transform: skew(63deg, -26.6deg);
   transform: skew(63deg, -25deg);
-
-
-
 }
 
 h1 span {
@@ -112,7 +109,6 @@ h2 {
   transform: skew(-1deg, -25deg);
 
   z-index: 1000;
-
 }
 
 #scene {
@@ -192,7 +188,12 @@ ul {
   margin: -110px -15px 0 auto;
 }
 
+input{
+  outline: none;
+}
+
 .bouton_main {
+  text-align: center;
   font-weight: bold;
   position: relative;
   display: block;
@@ -206,14 +207,39 @@ ul {
   font-size: 18px;
   letter-spacing: 3px;
   transition: all 1.4s;
+  text-decoration: none!important;
+  line-height: 50px;
 
-}
-
-input{
-  outline: none;
 }
 
 .bouton_main:hover {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.589);
+  width: 100vw;
+  color: rgb(66, 66, 66);
+}
+
+.actif {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  margin: 5px auto;
+  z-index: 5000 !important;
+  border: 1px solid white;
+  width: 300px;
+  height: 50px;
+  color:  rgb(66, 66, 66);
+  background-color: rgba(255, 255, 255, 0.589);
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: all 1.4s;
+  text-decoration: none!important;
+  line-height: 50px;
+
+}
+
+.actif:hover {
   border: none;
   background-color: rgba(255, 255, 255, 0.589);
   width: 100vw;
@@ -234,7 +260,6 @@ input{
   letter-spacing: 3px;
 
   transition: all 0.4s;
-
 }
 
 .bouton_second:hover {
@@ -267,6 +292,15 @@ input{
   transform: skew(-1deg, -25deg);
 }
 
+.image_colonne{
+  text-align: end;
+}
+
+footer{
+  margin: 90px 0 0 0;
+  padding:30px 0;
+}
+
 /* @media (max-width: 1250px) { 
 h3 {
   font-size: 140px;
@@ -279,18 +313,18 @@ h3 {
   z-index: 5;
   animation: 3s infinite alternate ease-in-out;
   width: 80%;
-  height: 80%;
+  
   animation-name: slidein;
 }
 
 @keyframes slidein {
   from {
-    top: -50px;
+    top: -60px;
     left: -35px;
   }
 
   to {
-    top: -45px;
+    top: -50px;
     left: 0px;
   }
 }
