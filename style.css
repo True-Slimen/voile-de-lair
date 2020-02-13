@@ -111,6 +111,18 @@ h2 {
   z-index: 1000;
 }
 
+h3 {
+  font-size: 24px;
+  font-family: roboto condensed;
+}
+
+h4 {
+  font-size: 24px;
+  padding-left: 100px;
+  margin: 80px 0 0 0;
+  font-family: roboto condensed;
+}
+
 #scene {
   overflow: hidden;
   position: relative;
@@ -125,6 +137,7 @@ h2 {
 }
 
 .section2 {
+  color: rgb(49, 49, 49);
   margin-top: 50px;
   height: 100vh !important;
 }
@@ -140,33 +153,30 @@ article {
   padding: 0 !important;
 }
 
-h3 {
-  font-size: 24px;
-  margin: 80px 0 0 0;
-  font-family: roboto condensed;
-}
-
-h4 {
-  font-size: 24px;
-  padding-left: 100px;
-  margin: 80px 0 0 0;
-  font-family: roboto condensed;
-}
-
 p {
   font-family: roboto condensed;
   background-color: rgb(255, 255, 255);
   vertical-align: middle;
 }
 
+.texte{
+  margin-bottom: 70px;
+}
+
 .text_gauche {
-  padding-right: 100px;
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0px auto;
 }
 
 .text_droite {
   padding-left: 100px;
   margin: 40px auto 0 auto;
+}
+
+.diviseur{
+  border:         none;
+    border-left:    1px solid rgb(49, 49, 49);
+    height:         100%;
+    width:          1px;
 }
 
 #scene img {
@@ -243,28 +253,30 @@ input{
   border: none;
   background-color: rgba(255, 255, 255, 0.589);
   width: 100vw;
-  color: rgb(66, 66, 66);
+  color: rgb(49, 49, 49);
 }
 
 .bouton_second {
   position: relative;
   display: block;
-  margin: 60px 0 0 0px;
+  margin: 30px 0 0 0px;
   z-index: 5000 !important;
-  border: 1px solid rgb(36, 36, 36);
+  border: 1px solid rgb(49, 49, 49);
   width: 205px;
   height: 50px;
   color: rgb(26, 26, 26);
   background-color: rgba(255, 255, 255, 0);
   font-size: 18px;
   letter-spacing: 3px;
-
+  display: inline;
+  
   transition: all 0.4s;
 }
 
 .bouton_second:hover {
-  background-color: rgba(88, 88, 88, 0);
   letter-spacing: 5px;
+  color: white;
+  background-color: rgb(49, 49, 49);
 
 }
 
