@@ -139,12 +139,11 @@ h4 {
 .section2 {
   color: rgb(49, 49, 49);
   margin-top: 50px;
-  height: 100vh !important;
 }
 
 .section2 img {
   padding: 0 !important;
-  height: 50vh;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -153,14 +152,25 @@ article {
   padding: 0 !important;
 }
 
+.article-haut{
+  min-height: 350px;
+  background-image: url(image/art1v2.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: right;
+}
+
 p {
   font-family: roboto condensed;
-  background-color: rgb(255, 255, 255);
   vertical-align: middle;
 }
 
-.texte{
+/* .texte{
   margin-bottom: 70px;
+} */
+
+.rubrique_haut{
+  background-color: rgba(255, 255, 255, 0.568);
 }
 
 .text_gauche {
@@ -172,12 +182,12 @@ p {
   margin: 40px auto 0 auto;
 }
 
-.diviseur{
+/* .diviseur{
   border:         none;
     border-left:    1px solid rgb(49, 49, 49);
     height:         100%;
     width:          1px;
-}
+} */
 
 #scene img {
   position: absolute;
@@ -257,23 +267,39 @@ input{
 }
 
 .bouton_second {
-  position: relative;
-  display: block;
-  margin: 30px 0 0 0px;
+  margin-top: 30px ;
+  text-align: center!important;
   z-index: 5000 !important;
   border: 1px solid rgb(49, 49, 49);
-  width: 205px;
   height: 50px;
   color: rgb(26, 26, 26);
   background-color: rgba(255, 255, 255, 0);
-  font-size: 18px;
-  letter-spacing: 3px;
-  display: inline;
-  
+  font-size: 16px;
   transition: all 0.4s;
 }
 
 .bouton_second:hover {
+  min-width: 100%;
+  letter-spacing: 2px;
+  color: white;
+  background-color: rgb(49, 49, 49);
+}
+
+.bouton_troisieme {
+  margin-top: 30px ;
+  vertical-align: bottom;
+  z-index: 5000 !important;
+  border: 1px solid rgb(49, 49, 49);
+  
+  height: 50px;
+  color: rgb(26, 26, 26);
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 16px;
+  letter-spacing: 3px;
+  transition: all 0.4s;
+}
+
+.bouton_troisieme:hover {
   letter-spacing: 5px;
   color: white;
   background-color: rgb(49, 49, 49);
