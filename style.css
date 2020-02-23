@@ -459,12 +459,12 @@ h3 {
 
 @keyframes slidein {
   from {
-    top: 1vh;
-    left: -4vw;
+    top: -8vh;
+    left: -2vw;
   }
 
   to {
-    top: 5vh;
+    top: -4vh;
     left:2vw;
   }
 }
