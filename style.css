@@ -211,6 +211,10 @@ p {
   padding: 0;
 }
 
+.text-droite{
+  margin-right: 150px!important;
+}
+
 .photo-resp{
   display: none;
 }
@@ -414,21 +418,27 @@ footer p{
 }
 
 footer i{
-  font-size: 25px;
-  margin: 0 0 0px 0;
+  font-size: 21px;
+  width: 100%;
 }
 
-.foot-gauche li{
-  font-size: 12px;
-  margin: 10px 0;
+.foot-gauche a{
+ display: block;
+ margin: 5px 0;
 }
 
-.foot-milieu a{
+.foot-milieu a
+{
+  text-align: left;
   font-size: 12px;
 }
 
 .foot-milieu p{
   margin: 0 3px 0 0 ; 
+}
+
+.sign{
+  margin: 20px 0 0 0 ;
 }
 
 /* @media (max-width: 1250px) { 
