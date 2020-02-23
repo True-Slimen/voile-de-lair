@@ -22,7 +22,7 @@
 }
 
 .navbar li {
-  margin: 0 0.5vw;
+  margin: 0.5vw;
   font-family: roboto condensed;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .logo {
@@ -459,13 +459,13 @@ h3 {
 
 @keyframes slidein {
   from {
-    top: -60px;
-    left: -35px;
+    top: 1vh;
+    left: -4vw;
   }
 
   to {
-    top: -50px;
-    left: 0px;
+    top: 5vh;
+    left:2vw;
   }
 }
 
@@ -591,10 +591,33 @@ h3 {
   
 @media (max-width: 980px) {
  
+  .parapente {
+    z-index: 5;
+    animation: 3s infinite alternate ease-in-out;
+    width: 160%!important;
+    
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      top: 600px;
+      left:-350px;
+    }
+  
+    to {
+      top: 580px;
+      left: -320px;
+    }
+  }
+
   h3{
     font-size: 28px;
   }
 
+ .bouton_second{
+   font-size: 26px;
+ }
   
   h4{
     font-size: 28px;
