@@ -5,6 +5,7 @@
 }
 
 .navig {
+  margin: 30px 0 80px 0;
   height: 75px;
 }
 
@@ -112,10 +113,10 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: roboto condensed;
-  height: 90px;
-  margin-top: 25px;
+  height: 80px;
+  margin-top: 30px;
 }
 
 h4 {
@@ -161,8 +162,7 @@ p {
 .rubrique_haut{
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0);
-  padding: 0px 4%;
-  margin: 25px 0;
+  padding: 0px 60px;
 }
 
 .rubrique_haut a{
@@ -178,6 +178,7 @@ p {
   padding: 10px;
   border-radius: 50%;
   transition: all 0.2s;  
+  box-shadow:inset  1px 1px 9px 1px black;
 }
 
 .rubrique_haut img:hover{
@@ -189,8 +190,12 @@ p {
 .diviseur{
   border: none;
     border-left: 1px solid rgb(49, 49, 49);
-    height:   100%!important;
+    height:   auto;
     width:    5px!important;
+}
+
+.container-rubrique{
+  padding: 0;
 }
 
 #scene img {
@@ -271,7 +276,7 @@ input{
 }
 
 .bouton_second {
-  margin-top: 30px ;
+  margin: 30px 0;
   text-align: center!important;
   z-index: 5000 !important;
   border: 1px solid rgb(49, 49, 49);
@@ -456,19 +461,57 @@ h3 {
 
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 1284px) {
  
-  .diviseur{
-    display: none;
-  }
-
-  .section2 .container{
-    width: 100%!important;
-  }
-
-@media screen and (max-width: 640px) {
-  #scene {
-    height: 60vh;
+  .rubrique_haut{
+    padding: 0 30px;
   }
 }
+
+  @media (max-width: 992px) {
+ 
+    .diviseur{
+      display: none;
+    }
+
+
+  .haut-g{
+    border-right: 1px solid rgb(49, 49, 49);
+    border-bottom: 1px solid rgb(49, 49, 49);
+  }
+
+  .haut-d{
+    border-left: 1px solid rgb(49, 49, 49);
+    border-bottom: 1px solid rgb(49, 49, 49);
+  }
+
+  .bas-g{
+    border-right: 1px solid rgb(49, 49, 49);
+    border-top: 1px solid rgb(49, 49, 49);
+  }
+
+  .bas-d{
+    border-left: 1px solid rgb(49, 49, 49);
+    border-top: 1px solid rgb(49, 49, 49);
+  }
 }
+  
+@media (max-width: 980px) {
+ 
+  h3{
+    font-size: 28px;
+  }
+
+  .text{
+    padding: 0 30px;
+    font-size: 26px!important;
+  }
+
+  #scene{
+    height: 90vh!important;
+  }
+}
+
+
+
+
