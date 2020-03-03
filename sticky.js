@@ -1,14 +1,14 @@
 
-    // When the user scrolls the page, execute myFunction
+    // Active la fonction lorsque l'utilisateur scroll
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
+// Selectionne la nav
 var navbar = document.getElementById("navbar_fixed");
 
-// Get the offset position of the navbar
+// Definis la variable sticky par rapport à la position de la nav en haut de la page.
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// Ajoute la class sticky et shadow à la nav lorsque l'on atteint la position en scrollant. Les retire lorsque la nav quitte le sommet de la page.
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("shadow");
