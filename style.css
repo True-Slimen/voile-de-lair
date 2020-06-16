@@ -5,7 +5,7 @@
 }
 
 .navig {
-  margin: 30px 0 80px 0;
+  margin: 0px 0 80px 0;
   height: 75px;
 }
 
@@ -25,8 +25,6 @@
   margin: 0.5vw;
   font-family: roboto condensed;
 }
-
-
 
 .navbar a {
   position: relative;
